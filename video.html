@@ -23,7 +23,7 @@ var vid = document.getElementById("myVideo");
 // Assign an ontimeupdate event to the video element, and execute a function if the current playback position has changed
 vid.ontimeupdate = function() {myFunction()};
 //vid.ontimeupdate = function() {seekFunction()};
-
+  
 function myFunction() {
   // Display the current position of the video in a p element with id="demo"
   document.getElementById("played_%").innerHTML = vid.played.end(0)*100/vid.duration + "%";
